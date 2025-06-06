@@ -1,0 +1,89 @@
+body.theme-3 {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #17062a;
+  color: #ffe53d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  color: #ffe53d;
+}
+
+.theme-switch {
+  font-size: 0.8rem;
+  text-align: right;
+  color: #ffe53d;
+}
+
+.theme-switch input[type="range"] {
+  width: 80px;
+  accent-color: #1a5c5a;
+}
+
+.display {
+  background-color: #1e0836;
+  font-size: 2.5rem;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: right;
+  margin-bottom: 20px;
+  color: #ffe53d;
+  overflow-x: auto;
+}
+
+.keys {
+  background-color: #1e0836;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #331c4d;
+  color: #ffe53d;
+  cursor: pointer;
+  box-shadow: inset 0px -4px #881c9e;
+}
+
+.btn-del {
+  background-color: #56077c;
+  color: white;
+  box-shadow: inset 0px -4px #bf15f4;
+}
+
+.btn-reset {
+  grid-column: span 2;
+  background-color: #56077c;
+  color: white;
+  box-shadow: inset 0px -4px #bf15f4;
+}
+
+.btn-equals {
+  grid-column: span 2;
+  background-color: #1b4746;
+  color: black;
+  box-shadow: inset 0px -4px #2f5755;
+}

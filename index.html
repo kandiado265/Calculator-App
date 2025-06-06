@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- displays site properly based on user's device -->
+
+  <title>Innocent | Calculator app</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ <body class="theme-3">
+  <main class="container">
+
+    <!-- to appear left coner and above calculator -->
+    <div class="header">
+      <div class="title">calc</div>
+
+      <div class="theme-switch">
+        <span>THEME</span>
+        
+      <!--To appear to the right-->
+        <div class="toggle">
+          <span>1 2 3</span>
+          <input type="range" min="1" max="3" value="3" id="theme-toggle" />
+        </div>
+      </div>
+    </div>
+
+    <!-- output screen -->
+    <div id="display" class="display">0</div>
+
+    <!-- calculator keys -->
+    <div class="keys">
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button class="btn-del" onclick="del()">DEL</button>
+
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+      <button onclick="appendOperator('+')">+</button>
+
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button onclick="appendOperator('-')">-</button>
+
+      <button onclick="appendNumber('.')">.</button>
+      <button onclick="appendNumber('0')">0</button>
+      <button onclick="appendOperator('/')">/</button>
+      <button onclick="appendOperator('*')">x</button>
+
+      <button class="btn-reset" onclick="reset()">RESET</button>
+      <button class="btn-equals" onclick="calculate()">=</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+ 
+</body>
+</html>
